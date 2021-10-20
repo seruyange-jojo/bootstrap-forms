@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Bootstrap-examples-day-1</title>
+<style>
+    .cont-a{
+        background: teal;
+    }
+    .cont-b{
+        background: teal;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container p-5 d-flex justify-content-center cont-a">
+        <div class="card bg-info m-3 text-center text-secondary d-flex justify-content-center" style="width: 40vw;">
+            <div class="card-header">
+                <h2>Contact Form</h2>
+            </div>
+            <div class="card-body my-0">
+                <form action="#">
+                    <div class="form-group"><input type="text" class="form-control" placeholder="Name"></div>
+                    <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                    <div class="form-group"><input type="message" class="form-control" placeholder="Message"></div>
+                    <button class="btn btn-secondary btn-block">Send </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center p-5 cont-b my-5">
+        <div class="card bg-light w-50">
+            <div class="card-header"> <h1 class="text-center text-secondary">Contact Us</h1></div>
+            <div class="card-body  ">
+            <span class=" text-right ">Got a question? We'd love to hear from you. Send us a message and we will respond as soon as possible</span>
+            <input type="text" placeholder="Name" class="form-control my-2">
+            <input type="text" placeholder="Telephone" class="form-control my-2">
+            <input type="text" placeholder="Email" class="form-control my-2">
+            <input type="text" placeholder="When can we call You?" class="form-control my-2">
+            <button class="btn mt-5 btn-warning btn-block">Sign Me Up! <i class="fa fa-long-arrow-right ml-2 mt-1"></i> </button>
+        </div>
+        </div>
+    </div>
+
+
+     <div class="container rounded d-flex justify-content-center p-5 my-5 cont-b">
+         <div class="card bg-light w-50">
+             <div class="card-header bg-success">
+                 <div class="alert text-center alert-info"><h2>Contact Us!</h2></div>
+             </div>
+
+             <div class="card-body">
+                <span class="text-center ">Got a question? We'd love to hear from You. Send us a message and we will respond as soon as possible.</span>
+                <div class="input-group my-3">
+                    <div class="input-group-prepend"><span class="input-group-text">@username&nbsp; &nbsp; &nbsp; &nbsp;</span></div>
+                    <input type="text" name="" class="form-control" placeholder=" Username " id="">
+                </div>
+                <div class="input-group my-3">
+                    <div class="input-group-prepend"><span class="input-group-text">Telephone&nbsp;  &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span></div>
+                    <input type="telephone" name="" class="form-control" placeholder=" Telephone " id="">
+                </div>
+                <div class="input-group my-3">
+                    <div class="input-group-prepend"><span class="input-group-text">@example.com</span></div>
+                    <input type="email" name="" class="form-control" placeholder=" Email " id="">
+                </div>
+                 
+                <div class="btn btn-info btn-block">Login</div>
+             </div>
+         </div>
+     </div>
+
+     
+     <div class="container text-center ">
+         <div class="card p-2 cont-ab">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="row">
+                         <div class="col-md-6"><input type="text" placeholder="Name" class="form-control"></div>
+                         <div class="col-md-6"><input type="text" placeholder="Email" class="form-control"></div>
+                     </div>
+                     <div class="row mt-3">
+                         <div class="col-md-12"><textarea name="message" id="message" class="form-control" rows="4">Message</textarea></div>
+                     </div>
+                     <button class="btn btn-danger mt-3 float-right">Send Message!</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="container my-5 cont-b my-2 py-5 text-center d-flex justify-content-center">
+         <div class="card p-2 bg-dark ">
+             <div class="card-header text-center">
+                 <h1 class="text-secondary">Contact Form</h1>
+             </div>
+             <div class="card-body">
+                 <form action="">
+                     <div class="form-row">
+                         <div class="col"><input type="text" name="" id="" class="form-control" placeholder="Name"></div>
+                         <div class="col"><input type="text" name="" id="" class="form-control" placeholder="Email"></div>
+                     </div>
+                     <div class="form-row mt-3">
+                         <div class="col"><input type="text" name="" id="" class="form-control" placeholder="Telephone"></div>
+                         <div class="col"><input type="date" name="" id="" class="form-control" placeholder="Telephone"></div>
+                     </div>
+                     <div class="form-row mt-3">
+                         <div class="col-md-12"><textarea name="message" id="message" class="form-control" rows="4">Message</textarea></div>
+                     </div>
+                     <button class="btn btn-info btn-block mt-2">Submit</button>
+                 </form>
+             </div>
+         </div>
+    </div>
+
+   <div class="container my-4">
+       <div class="row">
+           <div class="col "><img src="image-1.jpg" alt=""></div>
+           <div class="col ">
+               <div class="card bg-light">
+                   <div class="card-header"><h2 class="text-center text-secondary">WELCOME BACK!</h2></div>
+                   <div class="card-body">
+                       <h4 class="text-center text-secondary">Signup!</h4>
+                       <div class="form-group"><input readonly type="text" name="name" id="name" class="form-control-plaintext" placeholder="Name"><hr></div>
+                       <div class="form-group"><input readonly type="text" name="name" id="name" class="form-control-plaintext" placeholder="Email"><hr></div>
+                       <div class="form-group">
+                           <div class="d-flex justify-content-between">
+                               <div class="form-check"><input type="checkbox" class="form-check-input"> <label for="form-check-label" class="form-check-label">Remember Me</label></div>
+                               <div><a href="#" class="text-info">Forgot Password!</a></div>
+                           </div>
+                       </div>
+                       <button class="btn btn-info btn-block">Login</button>
+                       <div class="text-center my-3"><a href="#" class=" text-secondary text-muted ">Terms of Use And Prvacy Policy.</a></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

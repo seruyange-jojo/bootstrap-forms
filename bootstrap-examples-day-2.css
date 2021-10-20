@@ -1,0 +1,18 @@
+ body{
+     background: thistle;
+ }
+
+.bodyy{
+   background: teal;
+   margin: 25px;
+   padding: 25px;
+}
+.modal-cont{
+    background: rgb(207, 248, 244);
+}
+.btn-primaryy{
+    background: turquoise;
+}
+.btn-secondaryy{
+    background: teal;
+}

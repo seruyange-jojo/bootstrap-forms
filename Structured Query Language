@@ -1,0 +1,171 @@
+ -----------------------SECTION ONE ------------------------
+ ----------------------Examples of Database sql commands--------------------
+SELECT ---Extracts data from the database-----------
+UPDATE ----------updates data in the database ----------
+DELETE ----------deletes data from the database ---------
+INSERT INTO -------------inserts new data into the database --------
+CREATE DATABASE  ----------creates a new database --------------
+ALTER DATABASE  -----------modifies the database ---------
+CREATE TABLE ---------Creates a new table in the database ---------
+ALTER TABLE -----------modifies table in the database ------------
+DROP TABLE --------------deletes a table in the database -----------
+CREATE INDEX ---------------creates an index (  Search Key  )
+DROP INDEX -----------deletes an index ---------------
+
+SELECT ----------------Extracts data from a database ----------
+UPDATE  -----------updates data in the database -----------
+DELETE -----------deletes data in the database ----------
+INSERT INTO ------------- inserts new data in the database -----------
+CREATE DATABASE ---------creates a new database ----------
+ALTER DATABASE -------------modifies data in database ----------
+CREATE TABLE -----------creates a new table in the database ------------
+ALTER TABLE ------------modifies a table in the database -----------
+DROP TABLE -------------deletes a table from the database ---------------
+CREATE INDEX -----------creates an index (   search key  )
+DROP INDEX ---------deletes an index from the database--------------
+
+SELECT 
+UPDATE
+DELETE
+INSERT INTO
+CREATE DATABASE 
+ALTER DATABASE 
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+CREATE INDEX
+DROP INDEX
+
+
+SELECT -------------Extracts data from the database ----------
+UPDATE --------updates data in the database ------------
+DELETE -----------deletes data from the database -------------
+INSERT INTO ---------inserts new data in the database -------------
+CREATE DATABASE -----------creates a new database ------------
+ALTER DATABASE -----------modifies data in a database -------------
+CREATE TABLE -----------creates a new table in the database -----------
+ALTER TABLE -------------modifies a table -----------
+DROP TABLE ------------deletes a table from the database -------------
+CREATE INDEX ---------------creates an index (   search key ) --------------
+DROP INDEX ------------deletes an index from the database ------------------
+
+-----------------------------SELECT STATEMENT-----------------------------
+
+SELECT column_name1 FROM table_name1;
+SELECT * FROM Customers;
+SELECT CutomerName, City FROM Customers;
+SELECT CustomerName, City FROM Customers;
+SELECT * FROM Customers;
+
+SELECT DISTINCT --------------Selects only distinct values ie duplicates are not included in the ---------- 
+SELECT DISTINCT column_name1 FROM table_name1;
+SELECT DISTINCT Country FROM Customers;
+SELECT COUNT(DISTINCT Country) FROM Customers;
+-----------------However the above doesn't work in ms access---------
+-----------so we work around it --------------------
+SELECT Count(*) AS DinstictCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+
+SELECT Count(*) AS DistinctCountries FROM (SELECT DISTINCT Country FROM Customers);
+
+
+-------------------------WHERE STATEMENT-----------------------------
+------------Where statement enables you to filter records in the database---------------
+SELECT column_name1 FROM table_name1 WHERE condition;
+SELECT column_name1 FROM table_name1 WHERE condition;
+
+SELECT * FROM customers WHERE Country= "Mexico";
+-----------WHERE statement Operators----------
+=               Equals
+<> or !=        Not Equal
+<               Smaller than
+>               Larger than
+<=              Smaller than or equal 
+>=              Larger than or Equal
+BETWEEN         Between a certain range
+LIKE            Search For a Pattern
+IN              Specift mulitple possible values in a column 
+
+
+
+
+SELECT * FROM Products WHERE Price = 18;
+SELECT * FROM products WHERE Price = 19;
+
+SELECT * FROM Products WHERE Price > 30;
+SELECT * FROM Products WHERE Price > 20;
+
+SELECT * FROM Products WHERE Price < 30;
+SELECT * FROM Products WHERE Price < 40;
+
+SELECT * FROM Products WHERE Price >= 43;
+SELECT * FROM Products WHERE Price <= 32;
+
+SELECT * FROM Products WHERE Price <> 32;
+SELECT * FROM Products WHERE Price != 23;
+
+SELECT * FROM Products WHERE Price BETWEEN 30 AND 89;
+SELECT * FROM Products WHERE Price BETWEEN 59 AND 90;
+
+SELECT * FROM [Customers] WHERE City LIKE 'b%';
+SELECT * FROM [Customers] WHERE City LIKE 's%';
+
+SELECT * FROM [Customers] WHERE City IN ('Berlin','Paris');
+SELECT * FROM [Customers] WHERE City IN ('Madrid','Paris');
+
+------------WHERE AND--- WHERE OR ------WHERE NOT-------
+SELECT column_name1, column_name2..
+FROM [table_name1]
+WHERE condition AND condition ....;
+
+SELECT column_name1, column_name2...
+FROM [table_name1]
+WHERE condition OR condition;
+
+SELECT column_name1,column_name2
+FROM [table_name1]
+WHERE NOT condition;
+
+
+
+SELECT * FROM [Customers] WHERE City='Berlin' AND City='Madrid' AND City='Paris';
+SELECT * FROM [Customers] WHERE City='Berlin' OR City='London' AND City='Rome';
+SELECT * from [customers] WHERE NOT City='Berlin';
+
+SELECT * FROM [Customers] WHERE NOT Country='Germany' AND Country='UK'
+
+
+--------------------------ORDER BY KEYWORD----------------------
+SELECT * column_name1
+FROM [table_name1]
+ORDER BY column_name1, column_name2 .....ASC|DESC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

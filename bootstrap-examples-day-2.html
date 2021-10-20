@@ -1,0 +1,363 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="Description" content="Enter your description here"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="bootstrap-examples-day-2.css">
+ <title>Bootstrap-examples-day-2</title>
+ </head>
+ <body>
+ 
+
+    <div class="container bodyy m-5">
+        <div class="d-flex justify-content-center">
+             <!-- Button trigger modal -->
+             <button type="button" class="btn btn-primaryy btn-lg" data-toggle="modal" data-target="#modelId">
+               Login
+             </button>
+             
+             <!-- Modal -->
+             <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                 <div class="modal-dialog  " role="document">
+                     <div class="modal-content modal-cont ">
+                             <div class="modal-header bg-secondary">
+                                     <h5 class="modal-title text-light text-center">New &nbsp; Account</h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                             <span aria-hidden="true"> <i class="fa fa-long-arrow-right" style="font-size: 24px;" aria-hidden="true"></i></span>
+                                         </button> 
+                                 </div>
+                         <div class="modal-body">  
+                             <div class="container-fluid">
+                                 <form action="#">
+                                    <input   placeholder="Full Name" type="text" name="name" id="name" class="form-control-plaintext">
+                                    <hr>
+                                    <input   placeholder="Email" type="email" name="email" id="email" class="form-control-plaintext">
+                                    <hr>
+                                    <input   placeholder="Password" type="password" name="passkey" id="passkey" class="form-control-plaintext">
+                                    <hr>
+                                    <label for="" class=""><p class="text-dark">By signing up I accept the <strong>Terms And Conditions</strong> of Daily.</p> </label>
+                                 </form>
+                             </div> 
+                         </div>
+                         <div class="modal-footer">
+                             <button type="submit" formaction="#" class="btn btn-secondaryy float-center">Login</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             
+             <script>
+                 $('#exampleModal').on('show.bs.modal', event => {
+                     var button = $(event.relatedTarget);
+                     var modal = $(this);
+                     // Use above variables to manipulate the DOM
+                     
+                 });
+             </script>
+        </div>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#iiiii">
+          Sign Me Up!
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="iiiii" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <!-- <div class="modal-header">
+                                    
+                            </div> -->
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="fas fa-close mb-2" style="color: rgb(241, 12, 12);"> </span>
+                        </button>
+                        <div class="container-fluid">
+                            <img src="image-2.jpg" class="img-fluid" alt="">
+                            <q class="lead font-weight-bold">Thank For Subscribing To Our Newsletter.</q>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal"><i class="fa fa-thumbs-up" aria-hidden="true"></i> </button>
+                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            $('#exampleModal').on('show.bs.modal', event => {
+                var button = $(event.relatedTarget);
+                var modal = $(this);
+                // Use above variables to manipulate the DOM
+                
+            });
+        </script>
+    </div>
+
+
+    <div class="container d-flex justify-content-center my-5">
+        <div class="card" style="width: 40vw;">
+            <div class="card-body">
+                <h4 class="card-title text-center">Creativity</h4>
+                <p class="card-text text-center text-lead">Enter Your Login Details</p>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="exampleAddon"> <i class="fa fa-user" aria-hidden="true"></i> </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username Or Email" aria-label="Example placeholder" aria-describedby="exampleAddon">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="exampleAddon">  <i class="fa fa-lock" aria-hidden="true"></i> </span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Example placeholder" aria-describedby="exampleAddon">
+                </div>
+                 
+              <div class="row">
+                <div class="form-group col-sm-6">
+                     <label for="rem"><input type="radio" name="rem" id="rem"> &nbsp;  Remember Me!</label>
+                </div>
+                <div class="col-sm-6">
+                    <p class="float-right text-info">Forgot Password?</p>
+                </div>
+              </div>
+              <div class="btn btn-primary btn-block">Login</div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container my-5 mx-5 row">
+        <header class="container-fluid my-5">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="#">Jojo</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Sites</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#"><i class="fas fa-globe-africa    "></i>Africa</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-globe-africa    "></i> Uganda</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button type="submit" formaction="action_page2.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">LookUp Sites</button>
+                    </form>
+                </div>
+            </nav>  
+        </header>
+        <main class="container">
+            <h2 class=" text-center text-info">Landscape Cascade Show </h2>
+        </main>
+        <div id="carouselId" class="carousel slide container-fluid" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary ">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+ 
+    <div class="container mx-5 my-5 row">
+        <div id="carouselIdd" class="carousel slide container" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIdd" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIdd" data-slide-to="1"></li>
+                <li data-target="#carouselIdd" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                             </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="image-1.jpg" alt="">
+                            <div class="card-body bg-secondary">
+                                <h4 class="card-title text-center text-info">Landscape</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIdd" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIdd" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <footer class="my-5 mx-5">
+        <div class="alert alert-primary container-fluid">
+            <h1 class="text-lead text-center">&copy; Seruyange Joseph &reg; 2020-2021</h1>
+            <p class="text-center text-info text-font-bolder">All Rights Reserved.</p>
+        </div>
+    </footer>
+ </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+ </body>
+ </html>
